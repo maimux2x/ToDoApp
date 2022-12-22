@@ -8,3 +8,7 @@ Vue.jsで作成したToDoアプリをローカルでお試しいただくこと�
 ```
 $ git clone https://github.com/自分のアカウント名/ToDoApp.git
 ```
+4. index.htmlをブラウザで開くとToDoアプリを利用いただけます。
+
+## 注意事項
+- データはローカルストレージに保存されます。

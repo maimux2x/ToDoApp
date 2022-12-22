@@ -11,7 +11,6 @@ const app = new Vue({
     },
     loadTodos() {
       const json = localStorage.getItem("todo");
-      console.log(json);
       if (json != null) this.todos = JSON.parse(json);
     },
   },

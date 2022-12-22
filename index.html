@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js App</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>ToDoApp</h1>
+  <div id="app">
+    <input type="text" v-model="addText" ref="editor" placeholder="ToDoを入力してね">
+    <button v-on:click="addToDo()" class="add">{{changeButtonText}}</button><hr>
+    <table>
+      <tr v-for="todo in todos"  v-bind:key="todo.id">
+        <td v-bind:class="{ done: todo.isChecked }" class="todo"><input type="checkbox" v-model="todo.isChecked">{{ todo.text }}</td>
+        <td><button v-on:click="deleteTodo(todo.id)" class="delete">削除</button></td>
+        <td><button v-on:click="editTodo(todo.id)" class="edit">編集</button></td>
+      </tr>
+    </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

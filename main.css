@@ -1,0 +1,28 @@
+
+.add {
+  background-color: #333;
+  color: #fff;
+  width: 80px;
+  border-radius: 5px;
+  padding: 18px, 32px;
+}
+.edit {
+  background-color: #333;
+  color: #fff;
+  width: 80px;
+  border-radius: 5px;
+  padding: 18px, 32px;
+}
+.delete {
+  background-color: #333;
+  color: #fff;
+  width: 80px;
+  border-radius: 5px;
+  padding: 18px, 32px;
+}
+.done {
+  text-decoration: line-through;
+}
+.todo {
+  width: 150px;
+}
